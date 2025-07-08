@@ -50,13 +50,13 @@ const Projects: React.FunctionComponent = () => {
           <div className='min-h-[50px] w-full px-[20px] flex justify-between items-center gap-[40px]'>
             <p className='text-[#16171A] text-[16px] font-medium'>Active Projects</p>
 
-            <div className='h-[30px] w-[121px] bg-[#31A8FF33] hover:bg-[#0D99FF] rounded-[7px] text-[#0D99FF] hover:text-[#FFFFFF] text-[13px] font-medium transition-all duration-300 flex justify-center items-center gap-[5px] cursor-pointer'>
+            <div className='h-[30px] w-[121px] bg-[#F2EDEB] hover:bg-[#DD0733] rounded-[7px] text-[#DD0733] hover:text-[#FFFFFF] text-[13px] font-medium transition-all duration-300 flex justify-center items-center gap-[5px] cursor-pointer'>
               <FaFileExcel />
               <p>Export Report</p>
             </div>
           </div>
 
-          <div className='min-h-[252px] max-h-[252px] overflow-hidden w-full flex flex-col'>
+          <div className='min-h-[252px] max-h-[252px] w-full flex flex-col'>
             <div className='min-h-[42px] w-full px-[20px] bg-[#F5F5F5] flex items-center gap-[20px]'>
               <div className='w-[10%] text-[#16171A] text-[14px] font-medium flex justify-start items-center'>S.No.</div>
               <div className='w-[20%] text-[#16171A] text-[14px] font-medium flex justify-start items-center'>Client Name</div>
@@ -65,7 +65,16 @@ const Projects: React.FunctionComponent = () => {
             </div>
 
             {projectsData.map((item, index) => (
-              ((index >= (selectedPaginationPage - 1) * rowsPerPage && index < (selectedPaginationPage) * rowsPerPage) && <div className='min-h-[42px] w-full px-[20px] border-b border-solid border-[#E2E2E2] flex items-center gap-[20px]' key={index}>
+              ((index >= (selectedPaginationPage - 1) * rowsPerPage && index < (selectedPaginationPage) * rowsPerPage) && <div className='min-h-[42px] w-full px-[20px] border-b border-solid border-[#E2E2E2] flex items-center gap-[20px] relative group cursor-default' key={index}>
+                <div className='absolute bottom-[-24px] flex justify-center items-center' style={{ width: 'calc(100% - 40px)' }}>
+                  <div className='min-h-[30px] h-max w-max max-w-full py-[5px] bg-[#7C7C7C] rounded-[5px] z-10 opacity-0 group-hover:opacity-100 transition-all duration-500'>
+                    <div className='h-full w-full relative'>
+                      <p className='h-full w-full text-[#FFFFFF] text-[12px] flex justify-center items-center px-[10px]'>{item.description}</p>
+                      <div className='absolute left-[50%] top-[-9px] h-[10px] w-[10px] bg-[#7C7C7C] rotate-45'></div>
+                    </div>
+                  </div>
+                </div>
+
                 <div className='w-[10%] text-[#888888] text-[13px] font-medium flex justify-start items-center'>{index + 1}.</div>
                 <div className='w-[20%] text-[#888888] text-[13px] font-medium flex justify-start items-center'>{item.client}</div>
 
@@ -83,11 +92,11 @@ const Projects: React.FunctionComponent = () => {
           <div className='min-h-[44px] w-full px-[20px] flex justify-between items-center gap-[40px]'>
             <p className='text-[#888888] text-[14px] font-normal'>Showing {(selectedPaginationPage - 1) * rowsPerPage + 1} to {(selectedPaginationPage * rowsPerPage > projectsData.length) ? projectsData.length : selectedPaginationPage * rowsPerPage} of {projectsData.length} entries</p>
 
-            <div className='flex items-center gap-[7px]'>
+            <div className='flex items-center gap-[7px] z-20'>
               <MdOutlineKeyboardArrowLeft className='text-[#666] text-[20px] hover:brightness-75 transition-all duration-300 cursor-pointer' onClick={handlePaginationPrevious} />
 
               {[1, 2, 3, 4, 5].map((item, index) => (
-                (item <= totalPages) && <div className={`h-[26px] w-[26px] rounded-[5px] text-[14px] transition-all duration-300 cursor-pointer flex justify-center items-center ${selectedPaginationPage === item ? 'bg-[#0D99FF] text-[#FFFFFF]' : 'text-[#2C2C2C]'}`} key={index} onClick={() => handlePaginationClick(item)}>
+                (item <= totalPages) && <div className={`h-[26px] w-[26px] rounded-[5px] text-[14px] transition-all duration-300 cursor-pointer flex justify-center items-center ${selectedPaginationPage === item ? 'bg-[#DD0733] text-[#FFFFFF]' : 'text-[#2C2C2C]'}`} key={index} onClick={() => handlePaginationClick(item)}>
                   {item}
                 </div>
               ))}

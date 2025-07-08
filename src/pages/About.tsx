@@ -54,10 +54,10 @@ const About: React.FunctionComponent<HomePageProps> = ({ setSelectedServiceDetai
         </div>
 
         <div className='min-h-[600px] w-[50%] flex justify-center items-center'>
-          <div className='max-w-[400px] flex flex-col gap-[10px] relative right-[50px]'>
+          <div className='max-w-[440px] flex flex-col gap-[10px] relative right-[50px]'>
             <p className='text-[#727272] text-[11px] font-medium uppercase'>We are Hirdayram Electric Company</p>
 
-            <h3 className='text-[#16171A] text-[35px] font-bold leading-[38px]'>Produce your own clean save the environment</h3>
+            <h3 className='text-[#16171A] text-[32px] font-bold leading-[38px]'>Empowering Tomorrow With Smarter Electrical Solutions</h3>
             <p className='mt-[5px] text-[#727272] text-[11px]'>Hirdayram deals in all type of Electrical Installations in Commercial and Industrial Projects. We Design, Supply and Install the electrical Installations as per the requirements of client. We have experience in all facets of electrical service from large Commercial / Industrial projects to Installing light fixtures and its maintenance.</p>
 
             <div className='mt-[10px] pb-[15px] border-b border-solid border-[#F0F0F0] flex items-center gap-[30px]'>
@@ -106,7 +106,7 @@ const About: React.FunctionComponent<HomePageProps> = ({ setSelectedServiceDetai
         <div className='flex flex-col gap-[5px]'>
           <div className='flex justify-center items-center gap-[3px]'>
             <IoIosFlash className='text-[#DD0733] text-[16px]' />
-            <p className='text-[#727272] text-[12px] font-medium uppercase'>Our Hirdayram Services</p>
+            <p className='text-[#727272] text-[12px] font-medium uppercase'>Hirdayram Services</p>
           </div>
 
           <h3 className='w-[560px] text-[#16171A] text-[36px] font-bold text-center leading-[40px]'>Outstanding power plant, engineering & residential services</h3>
@@ -146,8 +146,8 @@ const About: React.FunctionComponent<HomePageProps> = ({ setSelectedServiceDetai
         <div className='min-h-[500px] h-full w-[55%] pl-[70px] flex items-center'>
           <div className='max-w-[450px] flex flex-col gap-[30px]'>
             <div className='flex flex-col gap-[3px]'>
-              <p className='text-[#9F9F9F] text-[12px] uppercase font-medium'>Why Choose our Buddit</p>
-              <h3 className='text-[#FFFFFF] text-[35px] font-semibold leading-[35px]'>Great reason for the people choose our Hirdayram</h3>
+              <p className='text-[#9F9F9F] text-[12px] uppercase font-medium'>Why Choose our Hirdayram</p>
+              <h3 className='text-[#FFFFFF] text-[35px] font-semibold leading-[35px]'>Great reason for the people choose Hirdayram</h3>
             </div>
 
             <p className='text-[#FFFFFFA3] text-[12px]'>Professional, reliable, accountable, experienced, on time work completion, in house engineering and designing, fully customer centric.</p>
