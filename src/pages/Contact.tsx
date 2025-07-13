@@ -81,9 +81,9 @@ const Contact: React.FunctionComponent = () => {
           </div>
 
           <div className='h-full w-full p-[30px] sm:p-[50px] bg-[#FFFFFF] border border-solid border-[#DCDCDC] flex flex-col gap-[25px]'>
-            <p className='text-[#16171A] text-[26px] font-bold'>Send your message</p>
+            <p className='text-[#16171A] text-[22px] sm:text-[26px] font-bold'>Send your message</p>
 
-            <div className='flex flex-col gap-[25px]'>
+            <div className='flex flex-col gap-[15px] md:gap-[25px]'>
               <div className='flex flex-col md:flex-row items-center gap-[15px]'>
                 <div className='h-[42px] w-full md:w-[50%] bg-[#F5F5F8] px-[15px] flex items-center border border-solid border-transparent focus-within:border-[#DD0733] rounded-[3px] transition-all duration-300'>
                   <input type="text" name='firstName' placeholder='Enter your First-Name' className='h-full w-full text-[#16171A] text-[12px] outline-none' value={contactFormData.firstName} onChange={handleChange} />
