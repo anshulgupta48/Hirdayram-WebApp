@@ -7,9 +7,9 @@ import { LogoWhite, InstaPost1, InstaPost2, InstaPost3, InstaPost4, InstaPost5, 
 const Footer: React.FunctionComponent = () => {
   return (
     <div className='flex flex-col z-10 font-sans'>
-      <div className='min-h-[400px] w-full pt-[50px] footer-bg flex justify-center items-center'>
-        <div className='h-full w-[800px] flex justify-between gap-[40px]'>
-          <div className='flex flex-col gap-[20px]'>
+      <div className='min-h-[400px] w-full py-[30px] sm:py-[50px] px-[30px] footer-bg flex lg:justify-center items-center'>
+        <div className='h-full w-[500px] lg:w-full max-w-[800px] grid grid-cols-1 sm:grid-cols-2 lg:flex lg:justify-between gap-[20px] sm:gap-[40px]'>
+          <div className='min-h-[150px] w-[220px] flex flex-col gap-[20px]'>
             <div className='flex items-center gap-[5px]'>
               <img src={LogoWhite} alt="Hirdayram-Logo" className='h-[25px] w-[25px]' />
               <p className='text-[#FFFFFF] text-[20px] font-semibold'>Hirdayram</p>
@@ -30,7 +30,7 @@ const Footer: React.FunctionComponent = () => {
             </div>
           </div>
 
-          <div className='flex flex-col gap-[15px]'>
+          <div className='min-h-[172px] w-[105px] flex flex-col gap-[15px]'>
             <h4 className='text-[#FFFFFF] text-[18px] font-semibold'>Useful Links</h4>
 
             <div className='flex flex-col gap-[10px]'>
@@ -42,7 +42,7 @@ const Footer: React.FunctionComponent = () => {
             </div>
           </div>
 
-          <div className='flex flex-col gap-[15px]'>
+          <div className='min-h-[172px] w-[135px] flex flex-col gap-[15px]'>
             <h4 className='text-[#FFFFFF] text-[18px] font-semibold'>Services</h4>
 
             <div className='flex flex-col gap-[10px]'>
@@ -54,7 +54,7 @@ const Footer: React.FunctionComponent = () => {
             </div>
           </div>
 
-          <div className='flex flex-col gap-[15px]'>
+          <div className='min-h-[150px] w-[170px] flex flex-col gap-[15px]'>
             <h4 className='text-[#FFFFFF] text-[18px] font-semibold'>Instagram</h4>
 
             <div className='w-[170px] flex items-center gap-[10px] flex-wrap'>
@@ -69,10 +69,10 @@ const Footer: React.FunctionComponent = () => {
         </div>
       </div>
 
-      <div className='min-h-[60px] w-full px-[50px] bg-[#1D1E22] flex justify-between items-center gap-[40px]'>
+      <div className='min-h-[50px] sm:min-h-[60px] w-full px-[30px] lg:px-[50px] bg-[#1D1E22] flex justify-center sm:justify-between items-center gap-[40px]'>
         <p className='text-[#727272] text-[12px] font-medium'>Copyright &copy; 2025 <span className='text-[#FFFFFF]'>Hirdayram</span> | All Rights Reserved</p>
 
-        <div className='flex items-center gap-[10px]'>
+        <div className='hidden sm:flex items-center gap-[10px]'>
           <div className='h-[30px] w-[30px] bg-[#16171A] hover:bg-[#DD0733] transition-all duration-300 cursor-pointer flex justify-center items-center'>
             <FaFacebookF className='text-[#FFFFFF] text-[14px]' />
           </div>
