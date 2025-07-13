@@ -86,11 +86,11 @@ const Header: React.FunctionComponent = () => {
           </div>
         </div>
 
-        <div className='h-[35px] w-[35px] bg-[#DD0733] rounded-[5px] flex justify-center items-center cursor-pointer' onClick={() => setShowNavigationMenu(!showNavigationMenu)}>
+        <div className='sm:hidden h-[35px] w-[35px] bg-[#DD0733] rounded-[5px] flex justify-center items-center cursor-pointer' onClick={() => setShowNavigationMenu(!showNavigationMenu)}>
           <IoMdMenu className='text-[#FFFFFF] text-[26px]' />
         </div>
 
-        <div className={`absolute right-0 top-0 h-screen w-[300px] p-[20px] bg-[#16171A] flex flex-col gap-[30px] z-20 transition-all duration-300 ${showNavigationMenu ? 'translate-x-0' : 'translate-x-full'}`} ref={navigationMenuRef}>
+        <div className={`sm:hidden absolute right-0 top-0 h-screen w-[300px] p-[20px] bg-[#16171A] flex flex-col gap-[30px] z-20 transition-all duration-300 ${showNavigationMenu ? 'translate-x-0' : 'translate-x-full'}`} ref={navigationMenuRef}>
           <div className='flex justify-between items-center gap-[20px]'>
             <NavLink to='/' className='flex items-center gap-[7px]'>
               <img src={LogoWhite} alt="Hirdayram-Logo" className='h-[25px] w-[25px]' />

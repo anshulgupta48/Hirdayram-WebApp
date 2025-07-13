@@ -94,12 +94,12 @@ const Contact: React.FunctionComponent = () => {
                 </div>
               </div>
 
-              <div className='flex items-center gap-[15px]'>
-                <div className='h-[42px] w-[50%] bg-[#F5F5F8] px-[15px] flex items-center border border-solid border-transparent focus-within:border-[#DD0733] rounded-[3px] transition-all duration-300'>
+              <div className='flex flex-col md:flex-row items-center gap-[15px]'>
+                <div className='h-[42px] w-full md:w-[50%] bg-[#F5F5F8] px-[15px] flex items-center border border-solid border-transparent focus-within:border-[#DD0733] rounded-[3px] transition-all duration-300'>
                   <input type="email" name='email' placeholder='Enter your Email' className='h-full w-full text-[#16171A] text-[12px] outline-none' value={contactFormData.email} onChange={handleChange} />
                 </div>
 
-                <div className='h-[42px] w-[50%] bg-[#F5F5F8] px-[15px] flex items-center border border-solid border-transparent focus-within:border-[#DD0733] rounded-[3px] transition-all duration-300'>
+                <div className='h-[42px] w-full md:w-[50%] bg-[#F5F5F8] px-[15px] flex items-center border border-solid border-transparent focus-within:border-[#DD0733] rounded-[3px] transition-all duration-300'>
                   <input type="number" name='phoneNumber' placeholder='Enter your Phone-Number' className='h-full w-full text-[#16171A] text-[12px] outline-none' value={contactFormData.phoneNumber} onChange={handleChange} />
                 </div>
               </div>
