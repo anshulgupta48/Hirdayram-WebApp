@@ -43,10 +43,10 @@ const Projects: React.FunctionComponent = () => {
             <p className='text-[#727272] text-[12px] font-medium uppercase'>Our Hirdayram Projects</p>
           </div>
 
-          <h3 className='w-full sm:w-[450px] text-[#16171A] text-[30px] sm:text-[36px] font-bold text-center leading-[40px]'>Check our latest projects</h3>
+          <h3 className='w-full sm:w-[450px] text-[#16171A] text-[26px] sm:text-[30px] md:text-[36px] font-bold text-center leading-[40px]'>Check our latest projects</h3>
         </div>
 
-        <div className='min-h-[348px] w-[96%] sm:w-[92%] lg:w-[80%] bg-[#FFFFFF] border border-solid border-[#E6E6E6] rounded-[5px] services-box-shadow flex flex-col'>
+        <div className='min-h-[348px] w-[92%] lg:w-[80%] bg-[#FFFFFF] border border-solid border-[#E6E6E6] rounded-[5px] services-box-shadow flex flex-col'>
           <div className='min-h-[50px] w-full px-[10px] sm:px-[20px] flex justify-between items-center gap-[40px]'>
             <p className='text-[#16171A] text-[16px] font-medium'>Active Projects</p>
 
@@ -56,7 +56,7 @@ const Projects: React.FunctionComponent = () => {
             </div>
           </div>
 
-          <div className='min-h-[280px] max-h-[280px] w-full overflow-x-auto overflow-y-hidden flex flex-col relative pb-[30px]'>
+          <div className='min-h-[252px] sm:min-h-[280px] max-h-[252px] sm:max-h-[280px] w-full overflow-x-auto overflow-y-hidden flex flex-col relative pb-[30px]'>
             <div className='min-h-[42px] min-w-max w-full px-[10px] sm:px-[20px] bg-[#F5F5F5] flex items-center gap-[10px] sm:gap-[20px]'>
               <div className='min-w-[45px] w-[10%] text-[#16171A] text-[14px] font-medium flex justify-start items-center'>S.No.</div>
               <div className='min-w-[110px] w-[20%] text-[#16171A] text-[14px] font-medium flex justify-start items-center'>Client Name</div>
