@@ -8,15 +8,15 @@ import type { ServicesPageProps } from '../utils/types';
 const Services: React.FunctionComponent<ServicesPageProps> = ({ selectedServiceDetail, setSelectedServiceDetail }) => {
   return (
     <div className='flex flex-col font-sans'>
-      <div className='h-[450px] w-full pt-[100px] not-found-bg flex flex-col justify-center items-center gap-[10px] relative'>
+      <div className='h-[330px] sm:h-[450px] w-full pt-[100px] not-found-bg flex flex-col justify-center items-center gap-[10px] relative'>
         <div className='absolute left-0 top-0 h-full w-full bg-[#16171A] opacity-85'></div>
         <h2 className='text-[#FFFFFF] text-[30px] font-semibold leading-none z-10'>Services</h2>
         <div className='text-[#FFFFFF] text-[10px] z-10'><NavLink to='/'>Hirdayram</NavLink> / Services</div>
       </div>
 
-      <div className='min-h-[600px] w-full py-[70px] bg-[#FFFFFF] flex justify-center gap-[80px]'>
-        <div className='h-full w-[40%] flex justify-end'>
-          <div className='w-[270px] flex flex-col gap-[20px]'>
+      <div className='min-h-[600px] w-full px-[30px] py-[30px] sm:py-[50px] lg:py-[70px] bg-[#FFFFFF] flex flex-col lg:flex-row justify-center items-center lg:items-start gap-[40px] lg:gap-[80px] overflow-hidden'>
+        <div className='h-full w-[80%] lg:w-[40%] flex justify-center lg:justify-end'>
+          <div className='w-full lg:w-[270px] flex flex-col gap-[20px]'>
             <h3 className='text-[#16171A] text-[22px] font-semibold'>Our Services</h3>
 
             <div className='h-[360px] overflow-y-auto flex flex-col gap-[8px]'>
@@ -41,14 +41,14 @@ const Services: React.FunctionComponent<ServicesPageProps> = ({ selectedServiceD
           </div>
         </div>
 
-        <div className='h-full w-[60%] flex flex-col gap-[15px]'>
-          <div className='flex flex-col gap-[3px]'>
-            <p className='text-[#16171A] text-[20px] font-semibold'>{servicesData[selectedServiceDetail].title}</p>
-            <p className='w-[535px] text-[#16171A] text-[34px] font-bold leading-[40px]'>{servicesData[selectedServiceDetail].heading}</p>
+        <div className='h-full w-full lg:w-[60%] flex flex-col items-center lg:items-start gap-[15px]'>
+          <div className='flex flex-col items-center lg:items-start gap-[3px]'>
+            <p className='text-[#16171A] text-[16px] sm:text-[20px] font-semibold'>{servicesData[selectedServiceDetail].title}</p>
+            <p className='w-full lg:w-[535px] text-[#16171A] text-[28px] sm:text-[34px] font-bold leading-[32px] sm:leading-[40px] text-center sm:text-left'>{servicesData[selectedServiceDetail].heading}</p>
           </div>
 
-          <p className='w-[550px] text-[#727272] text-[12px]'>{servicesData[selectedServiceDetail].description}</p>
-          <div className='h-[348px] w-[550px] overflow-hidden'>
+          <p className='w-full lg:w-[550px] text-[#727272] text-[12px] text-center sm:text-left'>{servicesData[selectedServiceDetail].description}</p>
+          <div className='h-[250px] sm:h-[348px] w-[350px] sm:w-[550px] overflow-hidden'>
             <img src={servicesData[selectedServiceDetail].banner} alt="ServicesDetail-Banner" className='h-full w-full' />
           </div>
         </div>

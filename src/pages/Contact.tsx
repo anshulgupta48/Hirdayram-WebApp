@@ -62,7 +62,7 @@ const Contact: React.FunctionComponent = () => {
 
               <div className='flex flex-col items-center'>
                 <p className='text-[#16171A] text-[16px] font-semibold'>Contact us</p>
-                <p className='text-[#727272] text-[11px] font-medium'>sales@hirdayram.com</p>
+                <p className='text-[#727272] text-[11px] font-medium'>sales.hirdayram@gmail.com</p>
                 <p className='text-[#727272] text-[11px] font-medium'>+91 8126637448</p>
               </div>
             </div>
@@ -80,7 +80,7 @@ const Contact: React.FunctionComponent = () => {
             </div>
           </div>
 
-          <div className='h-full w-full p-[30px] sm:p-[50px] bg-[#FFFFFF] border border-solid border-[#DCDCDC] flex flex-col gap-[25px]'>
+          <div className='h-full w-full p-[20px] sm:p-[50px] bg-[#FFFFFF] border border-solid border-[#DCDCDC] flex flex-col gap-[25px]'>
             <p className='text-[#16171A] text-[22px] sm:text-[26px] font-bold'>Send your message</p>
 
             <div className='flex flex-col gap-[15px] md:gap-[25px]'>

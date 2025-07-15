@@ -44,7 +44,7 @@ const Header: React.FunctionComponent = () => {
 
           <div className='flex items-center gap-[5px] cursor-pointer group'>
             <IoIosMail className='text-[#DD0733] text-[14px]' />
-            <p className='text-[#BDB3B3] group-hover:text-[#FFFFFF] text-[10px] font-medium transition-all duration-300'>sales@hirdayram.com</p>
+            <p className='text-[#BDB3B3] group-hover:text-[#FFFFFF] text-[10px] font-medium transition-all duration-300'>sales.hirdayram@gmail.com</p>
           </div>
 
           <div className='flex sm:hidden items-center gap-[5px] cursor-pointer group'>
