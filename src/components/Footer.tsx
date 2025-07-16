@@ -20,7 +20,7 @@ const Footer: React.FunctionComponent = () => {
             <div className='flex flex-col gap-[5px]'>
               <div className='flex items-center gap-[5px] cursor-pointer group'>
                 <IoIosMail className='text-[#DD0733] text-[14px]' />
-                <p className='text-[#727272] group-hover:text-[#FFFFFF] text-[10px] font-medium transition-all duration-300'>sales.hirdayram@gmail.com</p>
+                <p className='text-[#727272] group-hover:text-[#FFFFFF] text-[10px] font-medium transition-all duration-300'>sales@hirdayram.com</p>
               </div>
 
               <div className='flex items-center gap-[5px] cursor-pointer group'>

@@ -44,12 +44,12 @@ const Header: React.FunctionComponent = () => {
 
           <div className='flex items-center gap-[5px] cursor-pointer group'>
             <IoIosMail className='text-[#DD0733] text-[14px]' />
-            <p className='text-[#BDB3B3] group-hover:text-[#FFFFFF] text-[10px] font-medium transition-all duration-300'>sales.hirdayram@gmail.com</p>
+            <p className='text-[#BDB3B3] group-hover:text-[#FFFFFF] text-[10px] font-medium transition-all duration-300'>sales@hirdayram.com</p>
           </div>
 
           <div className='flex sm:hidden items-center gap-[5px] cursor-pointer group'>
             <FaPhone className='text-[#DD0733] text-[14px]' />
-            <p className='text-[#BDB3B3] group-hover:text-[#FFFFFF] text-[10px] font-medium transition-all duration-300'>+91 8126637448</p>
+            <p className='text-[#BDB3B3] group-hover:text-[#FFFFFF] text-[10px] font-medium transition-all duration-300'>+91 ----------</p>
           </div>
         </div>
 
@@ -82,7 +82,7 @@ const Header: React.FunctionComponent = () => {
 
           <div className='flex flex-col cursor-pointer group'>
             <p className='text-[#727272] text-[12px]'>Talk to an expert</p>
-            <p className='text-[#727272] text-[12px]'>Free <span className='text-[#16171A] group-hover:text-[#DD0733] text-[12px] transition-all duration-300'>+91 8126637448</span></p>
+            <p className='text-[#727272] text-[12px]'>Free <span className='text-[#16171A] group-hover:text-[#DD0733] text-[12px] transition-all duration-300'>+91 ----------</span></p>
           </div>
         </div>
 

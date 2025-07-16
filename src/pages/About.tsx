@@ -136,10 +136,10 @@ const About: React.FunctionComponent<HomePageProps> = ({ setSelectedServiceDetai
       </div>
 
       <div className='min-h-[500px] w-full pt-[30px] sm:pt-[50px] lg:pt-0 bg-[#1D1E22] flex flex-col lg:flex-row items-center gap-[30px] lg:gap-0'>
-        <div className='min-h-[250px] sm:min-h-[400px] lg:min-h-[500px] h-full w-[80%] sm:w-[70%] md:w-[70%] lg:w-[45%] choose-us-bg-2 relative'>
+        <div className='min-h-[250px] sm:min-h-[400px] lg:min-h-[500px] h-full w-[80%] sm:w-[70%] md:w-[70%] lg:w-[48%] choose-us-bg-2 relative'>
           <div className='absolute right-[100px] bottom-[120px] h-[100px] w-[250px] bg-[#FFFFFF] hidden sm:flex flex-col justify-center items-center pulseAnimation z-10'>
             <p className='text-[#16171A] text-[14px]'>For Emergency</p>
-            <p className='text-[#DD0733] text-[18px]'>+91 8126637448</p>
+            <p className='text-[#DD0733] text-[18px]'>+91 ----------</p>
           </div>
         </div>
 

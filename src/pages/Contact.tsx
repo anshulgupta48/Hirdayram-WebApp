@@ -41,7 +41,7 @@ const Contact: React.FunctionComponent = () => {
       </div>
 
       <div className='flex justify-center items-center py-[30px] sm:py-[70px] bg-[#FFFFFF]'>
-        <div className='w-full lg:max-w-[950px] px-[30px] sm:px-[50px] flex flex-col gap-[30px] sm:gap-[50px]'>
+        <div className='w-full lg:max-w-[970px] px-[30px] sm:px-[50px] flex flex-col gap-[30px] sm:gap-[50px]'>
           <div className='w-full grid grid-cols-1 sm:flex sm:items-center sm:flex-wrap gap-[15px]'>
             <div className='h-[200px] w-full sm:w-[48%] lg:w-[280px] bg-[#FFFFFF] contact-box-shadow flex flex-col justify-center items-center gap-[20px]'>
               <div className='h-[55px] w-[55px] bg-[#F5F5F8] rounded-full flex justify-center items-center'>
@@ -62,8 +62,8 @@ const Contact: React.FunctionComponent = () => {
 
               <div className='flex flex-col items-center'>
                 <p className='text-[#16171A] text-[16px] font-semibold'>Contact us</p>
-                <p className='text-[#727272] text-[11px] font-medium'>sales.hirdayram@gmail.com</p>
-                <p className='text-[#727272] text-[11px] font-medium'>+91 8126637448</p>
+                <p className='text-[#727272] text-[11px] font-medium'>sales@hirdayram.com</p>
+                <p className='text-[#727272] text-[11px] font-medium'>+91 ----------</p>
               </div>
             </div>
 
