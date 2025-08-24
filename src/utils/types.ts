@@ -9,3 +9,9 @@ export interface ServicesPageProps {
     selectedServiceDetail: number,
     setSelectedServiceDetail: React.Dispatch<React.SetStateAction<number>>,
 };
+
+
+// <======== Exporting Types for Footer-Component ========>
+export interface FooterComponentProps {
+    setSelectedServiceDetail: React.Dispatch<React.SetStateAction<number>>,
+};

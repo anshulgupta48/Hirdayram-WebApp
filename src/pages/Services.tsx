@@ -35,7 +35,7 @@ const Services: React.FunctionComponent<ServicesPageProps> = ({ selectedServiceD
 
               <div className='flex flex-col cursor-pointer group'>
                 <p className='text-[#727272] text-[12px]'>Talk to an expert</p>
-                <p className='text-[#727272] text-[12px]'>Free <span className='text-[#16171A] group-hover:text-[#DD0733] text-[12px] transition-all duration-300'>+91 ----------</span></p>
+                <a href="tel:9140993955" className='text-[#727272] text-[12px]'>Free <span className='text-[#16171A] group-hover:text-[#DD0733] text-[12px] transition-all duration-300'>+91 9140993955</span></a>
               </div>
             </div>
           </div>

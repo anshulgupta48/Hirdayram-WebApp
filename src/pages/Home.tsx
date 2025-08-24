@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import SwiperCore from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -7,8 +7,6 @@ import { IoIosFlash } from 'react-icons/io';
 import { FaStar } from 'react-icons/fa';
 import { ImQuotesRight } from 'react-icons/im';
 import { FaArrowRightLong } from 'react-icons/fa6';
-import toast from 'react-hot-toast';
-import { supabase } from '../utils/supabase';
 import { blogsData, clientReviewsData, servicesData } from '../utils/constants';
 import type { HomePageProps } from '../utils/types';
 import { HeroOverlay, AboutBanner1, AboutBanner2, AboutBanner3, ExpertElectricianIcon, SafetyAssuranceIcon, TriangleShapeIcon, ServicesOverlay, ChooseUsBanner1, ChooseUsOverlay1, ChooseUsOverlay2, CustomSupportIcon, InsuredExpertIcon, FlatRateIcon, AvailableIcon } from '../assets/export';
@@ -16,7 +14,6 @@ import { HeroOverlay, AboutBanner1, AboutBanner2, AboutBanner3, ExpertElectricia
 const Home: React.FunctionComponent<HomePageProps> = ({ setSelectedServiceDetail }) => {
   const servicesCarouselRef = useRef<SwiperCore | null>(null);
   const clientReviewsCarouselRef = useRef<SwiperCore | null>(null);
-  const [email, setEmail] = useState<string>('');
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -33,27 +30,6 @@ const Home: React.FunctionComponent<HomePageProps> = ({ setSelectedServiceDetail
   const handleServiceDetails = (selectedIndex: number) => {
     setSelectedServiceDetail(selectedIndex);
     navigate('/services');
-  };
-
-  const handleEmailSubmit = async () => {
-    try {
-      const { data, error } = await supabase.from('Contact Form').insert([
-        { 'Email': email },
-      ]).select();
-
-      if (data) {
-        toast.success('Email Submitted Successfully', { duration: 4000 });
-      }
-      else if (error) {
-        console.error('Error inserting data:', error);
-        toast.error('Something went Wrong', { duration: 4000 });
-      }
-    } catch (error) {
-      console.error('Error inserting data:', error);
-      toast.error('Something went Wrong', { duration: 4000 });
-    } finally {
-      setEmail('');
-    }
   };
 
   return (
@@ -232,7 +208,7 @@ const Home: React.FunctionComponent<HomePageProps> = ({ setSelectedServiceDetail
         </div>
       </div>
 
-      <div className='min-h-[500px] lg:min-h-[600px] w-full px-[30px] py-[30px] md:py-[50px] lg:pt-[70px] bg-[#FFFFFF] flex flex-col items-center gap-[40px] relative'>
+      <div className='min-h-[450px] lg:min-h-[550px] w-full px-[30px] py-[30px] md:py-[50px] lg:pt-[70px] bg-[#FFFFFF] flex flex-col items-center gap-[40px] relative'>
         <div className='flex flex-col gap-[5px]'>
           <div className='flex justify-center items-center gap-[3px]'>
             <IoIosFlash className='text-[#DD0733] text-[16px]' />
@@ -254,17 +230,6 @@ const Home: React.FunctionComponent<HomePageProps> = ({ setSelectedServiceDetail
               </NavLink>
             </div>
           ))}
-        </div>
-
-        <div className='absolute bottom-[-50px] left-[50%] translate-x-[-50%] h-[100px] w-[800px] px-[40px] bg-[#DD0733] hidden lg:flex justify-between items-center gap-[60px] z-20'>
-          <h3 className='w-[400px] text-[#FFFFFF] text-[22px] font-bold leading-[28px]'>Dedicated to bring the world powerful energy solutions</h3>
-
-          <div className='h-[60px] w-[400px] px-[10px] border-1 border-solid border-[#E38B9D] flex items-center gap-[5px]'>
-            <input type="text" placeholder='Email address' className='h-full w-full placeholder:text-[#FFFFFF] text-[#FFFFFF] text-[10px] outline-none' value={email} onChange={(e) => setEmail(e.target.value)} />
-            <button className='h-[40px] min-w-[155px] bg-[#FFFFFF] btn-hover flex justify-center items-center relative group' onClick={handleEmailSubmit}>
-              <span className='text-[#16171A] group-hover:text-[#FFFFFF] text-[10px] uppercase font-semibold z-10'>Check Availability</span>
-            </button>
-          </div>
         </div>
       </div>
     </div>

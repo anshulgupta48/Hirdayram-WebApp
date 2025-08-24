@@ -37,8 +37,8 @@ const Header: React.FunctionComponent = () => {
           <div className='hidden sm:flex items-center gap-[5px] cursor-pointer group'>
             <FaLocationDot className='text-[#DD0733] text-[12px]' />
             <div className='flex items-center text-[#BDB3B3] group-hover:text-[#FFFFFF] text-[10px] font-medium transition-all duration-300 group'>
-              <a href="https://www.google.com/maps/place/NTPC+Unchahar,+Gate+No.1/@25.9132065,81.3082062,15z/data=!4m10!1m2!2m1!1sInfront+of+NTPC+Gate+No.+01,+Amiliha+ka+Purwa,+Unchahar,++Raebareli,+Uttar+Pradesh+-+229406!3m6!1s0x399b11604e048157:0x70b1143aa306ae92!8m2!3d25.9185247!4d81.3225771!15sCltJbmZyb250IG9mIE5UUEMgR2F0ZSBOby4gMDEsIEFtaWxpaGEga2EgUHVyd2EsIFVuY2hhaGFyLCAgUmFlYmFyZWxpLCBVdHRhciBQcmFkZXNoIC0gMjI5NDA2IgOIAQGSARFnb3Zlcm5tZW50X29mZmljZaoBxwEKDS9nLzExYmM1azl5czIKCS9tLzBieTR0YxABKi8iK2luZnJvbnQgb2YgbnRwYyBnYXRlIG5vIDAxIGFtaWxpaGEga2EgcHVyd2EoADIfEAEiG4XW_U1g0NXDwV3m81SGVQ0gcBm09IgCBS_hVTJXEAIiU2luZnJvbnQgb2YgbnRwYyBnYXRlIG5vIDAxIGFtaWxpaGEga2EgcHVyd2EgdW5jaGFoYXIgcmFlYmFyZWxpIHV0dGFyIHByYWRlc2ggMjI5NDA24AEA!16s%2Fg%2F11t_hpn3r3?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D" target='_blank' className='w-[140px] group-hover:w-[270px] whitespace-nowrap text-ellipsis overflow-hidden transition-all duration-1000'>Infront of NTPC Gate No. 01, Amiliha ka Purwa, Unchahar, </a>
-              <p>Raebareli, Uttar Pradesh - 229406</p>
+              <a href="https://www.google.com/maps/place/NTPC+Unchahar,+Gate+No.1/@25.9132065,81.3082062,15z/data=!4m10!1m2!2m1!1sInfront+of+NTPC+Gate+No.+01,+Amiliha+ka+Purwa,+Unchahar,++Raebareli,+Uttar+Pradesh+-+229406!3m6!1s0x399b11604e048157:0x70b1143aa306ae92!8m2!3d25.9185247!4d81.3225771!15sCltJbmZyb250IG9mIE5UUEMgR2F0ZSBOby4gMDEsIEFtaWxpaGEga2EgUHVyd2EsIFVuY2hhaGFyLCAgUmFlYmFyZWxpLCBVdHRhciBQcmFkZXNoIC0gMjI5NDA2IgOIAQGSARFnb3Zlcm5tZW50X29mZmljZaoBxwEKDS9nLzExYmM1azl5czIKCS9tLzBieTR0YxABKi8iK2luZnJvbnQgb2YgbnRwYyBnYXRlIG5vIDAxIGFtaWxpaGEga2EgcHVyd2EoADIfEAEiG4XW_U1g0NXDwV3m81SGVQ0gcBm09IgCBS_hVTJXEAIiU2luZnJvbnQgb2YgbnRwYyBnYXRlIG5vIDAxIGFtaWxpaGEga2EgcHVyd2EgdW5jaGFoYXIgcmFlYmFyZWxpIHV0dGFyIHByYWRlc2ggMjI5NDA24AEA!16s%2Fg%2F11t_hpn3r3?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D" target='_blank' className='w-[140px] group-hover:w-[232px] whitespace-nowrap text-ellipsis overflow-hidden transition-all duration-1000'>Infront of W864+8CC त्रिवेणी अलमीरा, Unchahar Rd,</a>
+              <p>Unchahar, Uttar Pradesh - 229406</p>
             </div>
           </div>
 
@@ -49,7 +49,7 @@ const Header: React.FunctionComponent = () => {
 
           <div className='flex sm:hidden items-center gap-[5px] cursor-pointer group'>
             <FaPhone className='text-[#DD0733] text-[14px]' />
-            <p className='text-[#BDB3B3] group-hover:text-[#FFFFFF] text-[10px] font-medium transition-all duration-300'>+91 ----------</p>
+            <a href="tel:9140993955" className='text-[#BDB3B3] group-hover:text-[#FFFFFF] text-[10px] font-medium transition-all duration-300'>+91 9140993955</a>
           </div>
         </div>
 
@@ -82,7 +82,7 @@ const Header: React.FunctionComponent = () => {
 
           <div className='flex flex-col cursor-pointer group'>
             <p className='text-[#727272] text-[12px]'>Talk to an expert</p>
-            <p className='text-[#727272] text-[12px]'>Free <span className='text-[#16171A] group-hover:text-[#DD0733] text-[12px] transition-all duration-300'>+91 ----------</span></p>
+            <a href="tel:9140993955" className='text-[#727272] text-[12px]'>Free <span className='text-[#16171A] group-hover:text-[#DD0733] text-[12px] transition-all duration-300'>+91 9140993955</span></a>
           </div>
         </div>
 

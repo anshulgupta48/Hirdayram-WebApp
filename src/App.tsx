@@ -30,7 +30,7 @@ const App: React.FunctionComponent = () => {
         <Route path='/*' element={<NotFound />} />
       </Routes>
 
-      <Footer />
+      <Footer setSelectedServiceDetail={setSelectedServiceDetail} />
     </Router>
   )
 }

@@ -50,8 +50,8 @@ const Contact: React.FunctionComponent = () => {
 
               <a href="https://www.google.com/maps/place/NTPC+Unchahar,+Gate+No.1/@25.9132065,81.3082062,15z/data=!4m10!1m2!2m1!1sInfront+of+NTPC+Gate+No.+01,+Amiliha+ka+Purwa,+Unchahar,++Raebareli,+Uttar+Pradesh+-+229406!3m6!1s0x399b11604e048157:0x70b1143aa306ae92!8m2!3d25.9185247!4d81.3225771!15sCltJbmZyb250IG9mIE5UUEMgR2F0ZSBOby4gMDEsIEFtaWxpaGEga2EgUHVyd2EsIFVuY2hhaGFyLCAgUmFlYmFyZWxpLCBVdHRhciBQcmFkZXNoIC0gMjI5NDA2IgOIAQGSARFnb3Zlcm5tZW50X29mZmljZaoBxwEKDS9nLzExYmM1azl5czIKCS9tLzBieTR0YxABKi8iK2luZnJvbnQgb2YgbnRwYyBnYXRlIG5vIDAxIGFtaWxpaGEga2EgcHVyd2EoADIfEAEiG4XW_U1g0NXDwV3m81SGVQ0gcBm09IgCBS_hVTJXEAIiU2luZnJvbnQgb2YgbnRwYyBnYXRlIG5vIDAxIGFtaWxpaGEga2EgcHVyd2EgdW5jaGFoYXIgcmFlYmFyZWxpIHV0dGFyIHByYWRlc2ggMjI5NDA24AEA!16s%2Fg%2F11t_hpn3r3?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D" target='_blank' className='flex flex-col items-center'>
                 <p className='text-[#16171A] text-[16px] font-semibold'>Visit our place</p>
-                <p className='text-[#727272] text-[11px] font-medium'>Infront of NTPC Gate No. 01, Amiliha ka Purwa,</p>
-                <p className='text-[#727272] text-[11px] font-medium'>Unchahar, Raebareli, Uttar Pradesh</p>
+                <p className='text-[#727272] text-[11px] font-medium'>W864+8CC त्रिवेणी अलमीरा, Unchahar Rd,</p>
+                <p className='text-[#727272] text-[11px] font-medium'>Unchahar, Uttar Pradesh</p>
               </a>
             </div>
 
@@ -63,7 +63,7 @@ const Contact: React.FunctionComponent = () => {
               <div className='flex flex-col items-center'>
                 <p className='text-[#16171A] text-[16px] font-semibold'>Contact us</p>
                 <a href="mailto:sales@hirdayram.com" target='_blank' className='text-[#727272] text-[11px] font-medium'>sales@hirdayram.com</a>
-                <p className='text-[#727272] text-[11px] font-medium'>+91 ----------</p>
+                <a href="tel:9140993955" className='text-[#727272] text-[11px] font-medium'>+91 9140993955</a>
               </div>
             </div>
 
@@ -118,7 +118,7 @@ const Contact: React.FunctionComponent = () => {
 
       <div className='h-[280px] sm:h-[450px] w-full flex justify-center'>
         <div className='h-[250px] sm:h-[400px] w-full lg:max-w-[970px] px-[30px] sm:px-[50px] flex justify-center items-center'>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3588.508309063156!2d81.32000217371369!3d25.918529502110175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399b11604e048157%3A0x70b1143aa306ae92!2sNTPC%20Unchahar%2C%20Gate%20No.1!5e0!3m2!1sen!2sin!4v1752984597049!5m2!1sen!2sin" style={{ height: '100%', width: '100%', border: 'none' }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3588.0247805472045!2d81.2858099737144!3d25.934411101450088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399b0360dfc073eb%3A0xf835fb5c7e1dab09!2sUnchahar%20Rd%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1756015969979!5m2!1sen!2sin" style={{ height: '100%', width: '100%', border: 'none' }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>
